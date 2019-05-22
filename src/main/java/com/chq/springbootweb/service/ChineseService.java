@@ -2,6 +2,7 @@ package com.chq.springbootweb.service;
 
 
 import com.chq.springbootweb.entity.ChineseData;
+import com.chq.springbootweb.entity.ChineseData2;
 
 /**
  * @Auther: thinkpad
@@ -11,4 +12,6 @@ import com.chq.springbootweb.entity.ChineseData;
 public interface ChineseService {
     public ChineseData find(Integer id);
     public ChineseData findHexByChinese(String chinese);
+    public ChineseData2 findHexByChinesevote(String voteData);
+    public ChineseData2 ChineseToGBK(String chinese);
 }
